@@ -1,7 +1,7 @@
-import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mainnet;
+const activeChainId = ChainId.Mumbai;
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,4 +11,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;
