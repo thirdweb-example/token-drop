@@ -17,6 +17,7 @@ export default function Claim({ tokenDropContract }) {
       alert("Successfully claimed!");
     } catch (e) {
       console.error(e);
+      alert(e);
     }
   }
 

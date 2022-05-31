@@ -12,15 +12,11 @@ export default function Transfer({ tokenDropContract }) {
       return;
     }
 
-    console.log({ addressToTransferTo, amountToTransfer });
-
     try {
       const transferResult = await tokenDropContract?.transfer(
         addressToTransferTo,
         amountToTransfer
       );
-
-      console.log(transferResult);
 
       const newBalance = await tokenDropContract?.balanceOf(address);
 
