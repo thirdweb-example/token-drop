@@ -6,7 +6,7 @@ In this guide, we will utilize the [**Token Drop**](https://portal.thirdweb.com/
 
 We also utilize the token drop's [claim phases](https://portal.thirdweb.com/pre-built-contracts/token-drop#setting-claim-phases) feature, to release the tokens for a price, and only allow a certain amount to be claimed per wallet.
 
-**Check out the Demo here**: https://token-drop-thirdweb.vercel.app/
+**Check out the Demo here**: https://token-drop.thirdweb-example.com/
 
 ## Tools:
 
