@@ -20,25 +20,13 @@ We also utilize the token drop's [claim phases](https://portal.thirdweb.com/pre-
 
 - Create a Token Drop contract via the thirdweb dashboard on the Polygon Mumbai (MATIC) test network.
 
-- Clone this repository.
+- Create a project using this example by running:
+
+```bash
+npx create-tw-app --example token-drop
+```
 
 - Replace our demo token drop contract address (`0xCFbB61aF7f8F39dc946086c378D8cd997C72e2F3`) with your token drop contract address!
-
-```bash
-npm install
-# or
-yarn install
-```
-
-- Run the development server:
-
-```bash
-npm run start
-# or
-yarn start
-```
-
-- Visit http://localhost:3000/ to view the demo.
 
 # Guide
 
