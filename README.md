@@ -23,7 +23,7 @@ We also utilize the token drop's [claim phases](https://portal.thirdweb.com/pre-
 - Create a project using this example by running:
 
 ```bash
-npx create-tw-app --example token-drop
+npx thirdweb create --example token-drop
 ```
 
 - Replace our demo token drop contract address (`0xCFbB61aF7f8F39dc946086c378D8cd997C72e2F3`) with your token drop contract address!
