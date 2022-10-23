@@ -34,6 +34,19 @@
   opacity: 0.8;
 }
 
+.pink {
+  color: #cc25b3;
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.explain {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .secondaryButton {
   cursor: pointer;
   text-align: center;
@@ -56,6 +69,7 @@
   width: 50%;
   border-color: grey;
   opacity: 0.25;
+  margin-bottom: 2rem;
 }
 
 .holderGrid {
