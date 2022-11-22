@@ -1,6 +1,6 @@
 // Takes in a full wallet address and returns the first part ... then last part
 
-export default function truncateAddress(address) {
+export default function truncateAddress(address: string) {
   if (!address) {
     return "";
   }
