@@ -18,7 +18,7 @@ We also utilize the token drop's [claim phases](https://portal.thirdweb.com/pre-
 
 ## Using This Repo
 
-- Create a Token Drop contract via the thirdweb dashboard on the Goerli test network.
+- Create a Token Drop contract via the thirdweb dashboard on the Mumbai test network.
 
 - Create a project using this example by running:
 
@@ -38,7 +38,7 @@ It allows us to access all of the React SDK's helpful hooks anywhere in our appl
 
 ```jsx
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Goerli;
+const activeChainId = ChainId.Mumbai;
 
 function MyApp({ Component, pageProps }) {
   return (
