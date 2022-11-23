@@ -32,7 +32,7 @@ export default function ThirdwebGuideFooter() {
         }}
       >
         <img
-          src={"/github.png"}
+          src="/github.png"
           width={40}
           height={40}
           role="button"
