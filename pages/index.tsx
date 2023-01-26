@@ -58,13 +58,15 @@ const Home = () => {
   }, [totalAvailableSupply, claimedSupply]);
 
   const priceToMint = useMemo(() => {
-    const bnPrice = BigNumber.from(
-      activeClaimCondition.data?.currencyMetadata.value || 0
-    );
-    return `${utils.formatUnits(
-      bnPrice.mul(quantity).toString(),
-      activeClaimCondition.data?.currencyMetadata.decimals || 18
-    )} ${activeClaimCondition.data?.currencyMetadata.symbol}`;
+    if (quantity) {
+      const bnPrice = BigNumber.from(
+        activeClaimCondition.data?.currencyMetadata.value || 0
+      );
+      return `${utils.formatUnits(
+        bnPrice.mul(quantity).toString(),
+        activeClaimCondition.data?.currencyMetadata.decimals || 18
+      )} ${activeClaimCondition.data?.currencyMetadata.symbol}`;
+    }
   }, [
     activeClaimCondition.data?.currencyMetadata.decimals,
     activeClaimCondition.data?.currencyMetadata.symbol,
@@ -248,7 +250,6 @@ const Home = () => {
           placeholder="Enter amount to claim"
           onChange={(e) => {
             const value = parseInt(e.target.value);
-            console.log(maxClaimable);
             if (value > maxClaimable) {
               setQuantity(maxClaimable);
             } else if (value < 1) {
