@@ -5,14 +5,12 @@ import ThirdwebGuideFooter from "../components/guide/ThirdwebGuideFooter";
 import "../styles/globals.css";
 import { AppProps } from "next/app";
 
-// This is the chainId your dApp will work on.
+// This is the chain your dApp will work on.
 const activeChain = "mumbai";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider
-      activeChain={activeChain}
-      >
+    <ThirdwebProvider activeChain={activeChain}>
       <Head>
         <title>thirdweb Token Drop Example</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
