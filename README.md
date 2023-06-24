@@ -37,8 +37,8 @@ The thirdweb provider is a wrapper around our whole application.
 It allows us to access all of the React SDK's helpful hooks anywhere in our application.
 
 ```jsx
-// This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mumbai;
+// This is the chain your dApp will work on.
+const activeChainId = "mumbai";
 
 function MyApp({ Component, pageProps }) {
   return (
