@@ -90,7 +90,6 @@ const [amountToClaim, setAmountToClaim] = useState("");
     className={`${styles.textInput} ${styles.noGapBottom}`}
   />
   <Web3Button
-    accentColor="#5204BF"
     colorMode="dark"
     contractAddress="0x5ec440E5965da9570CAa66402980c6D20cbe0663"
     action={(contract) => contract.erc20.claim(amountToClaim)}
